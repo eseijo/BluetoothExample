@@ -1,0 +1,84 @@
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical">
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Activar Bluetooth"
+            android:id="@+id/but_activar"
+            android:layout_weight="1" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Desactivar Bluetooth"
+            android:id="@+id/but_desac"
+            android:layout_weight="1" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hacer visible"
+            android:id="@+id/but_dis"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:visibility="gone" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Buscar Dispositivos"
+            android:id="@+id/but_found"
+            android:layout_weight="1"
+            android:visibility="gone" />
+    </TableRow>
+
+    <!--<TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Dispositivos\nEmparejados"
+            android:id="@+id/textView" />
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner" />
+    </TableRow>-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Texto:"
+        android:id="@+id/textView3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Dispositivos Encontrados:"
+        android:id="@+id/textView2" />
+
+    <ListView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/listView"
+        android:layout_gravity="center_horizontal" />
+</LinearLayout>
